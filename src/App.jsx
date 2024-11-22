@@ -8,7 +8,7 @@ import Contact from './Pages/Contact/Contact';
 import About from './Pages/About/About';
 import ParentLogin from './Pages/Login/ParentLogin';
 import TeacherLogin from './Pages/Login/Teacherlogin';
-
+import CustomizedSwitches  from '../src/Components/DarkMode/DarkMode';
 function App() {
   const [count, setCount] = useState(0)
 

@@ -4,14 +4,13 @@ import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import './DarkMode.css';
 
-function DarkThemeToggleButton() {
+function CustomizedSwitches({ customStyle }) {
   const [isDark, setIsDark] = useState(false);
 
   const handleToggle = () => {
     setIsDark(!isDark);
   };
 
-  // Apply or remove the dark-mode class to the body element based on isDark
   useEffect(() => {
     if (isDark) {
       document.body.classList.add('dark-mode');
@@ -31,7 +30,7 @@ function DarkThemeToggleButton() {
           width: '40px',
           height: '40px',
           transition: 'background-color 0.3s, color 0.3s',
-          zIndex: 1000,
+          ...customStyle, // Apply custom styles from the prop
         }}
       >
         {isDark ? <LightModeIcon /> : <DarkModeIcon />}
@@ -40,4 +39,4 @@ function DarkThemeToggleButton() {
   );
 }
 
-export default DarkThemeToggleButton;
+export default CustomizedSwitches;

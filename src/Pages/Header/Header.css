@@ -104,7 +104,7 @@ body.dark-mode header {
   header {
     padding: 0px;
   }
-  .headerLeft {
+  .headerSearch {
     display: none;
   }
   .headerLogo {
@@ -125,6 +125,9 @@ body.dark-mode header {
   .mobNavDiv.visible {
     display: block;
   }
+  .headerIcons{
+    display: block;
+  }
 }
 
 @media (max-width: 900px) {
@@ -135,7 +138,7 @@ body.dark-mode header {
     display: none;
   }
   .headerLogo {
-    font-size: medium;
+    font-size: large;
   }
 }
 
