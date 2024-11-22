@@ -76,9 +76,7 @@ body.dark-mode header {
   z-index: 5;
 }
 
-.mobNavDiv.visible {
-  display: block;
-}
+
 
 .mobNavDiv ul {
   list-style: none;
@@ -121,6 +119,9 @@ body.dark-mode header {
     display: block;
     width: 100%;
   }
+  .mobNavDiv.visible {
+    display: block;
+  }
 }
 
 @media (max-width: 900px) {
@@ -134,3 +135,4 @@ body.dark-mode header {
     font-size: medium;
   }
 }
+
