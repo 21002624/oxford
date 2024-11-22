@@ -22,10 +22,15 @@ body {
   animation: darkModeAnimation 1s forwards;
 }
 
-/* Dark Mode styles */
+
 body.dark-mode {
   background-color: #121212;
   color: #ffffff;
+}
+
+body.dark-mode .navItem{
+  background-color: white;
+  color: #000;
 }
 
 /* Dark Mode transition animation */

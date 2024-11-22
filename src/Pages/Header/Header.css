@@ -4,7 +4,18 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding: .6rem;
+    position: sticky;
+    top: 0; 
+    background-color: white; 
+    z-index: 1000; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+body.dark-mode header {
+    background-color:hsl(0, 0%, 10%);
 }
 
 .headerLeft {
@@ -29,6 +40,12 @@ header {
     white-space: nowrap;
 }
 
+.logoDis{
+    color: black;
+    font-size: xx-small;
+}
+
+
 .MenuIcon {
     display: block; /* Always display the menu icon */
 }
@@ -44,47 +61,26 @@ header {
     align-items: center;
 }
 
-/* Mobile adjustments */
-@media (max-width: 600px) {
-    .headerLogo, .headerIcons {
-        display: none; /* Hide logo and icons on small screens */
+@media (max-width: 480px){
+    header{
+        padding: 0px;
     }
-
-    header {
-        padding: .5rem; /* Reduce padding */
+    .headerLeft{
+        display: none;
     }
-
-    .headerLeft {
-        gap: 0.5rem; /* Slightly smaller gap on mobile */
-    }
-
-    /* Initially hide the nav container */
-    .navContainer {
-        display: none; /* Hidden by default */
-        position: absolute;
-        top: 100%; /* Position below the header */
-        left: 0;
-        width: 100%;
-        background-color: #fff; /* White background for the dropdown */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for visibility */
-        z-index: 10;
-    }
-
-    /* Show nav when the menu icon is clicked */
-    .navContainer.show {
-        display: block;
-        animation: slideDown 0.3s ease-in-out; /* Smooth dropdown animation */
+    .headerLogo{
+        font-size: medium;
     }
 }
 
-/* Animation for dropdown nav */
-@keyframes slideDown {
-    0% {
-        transform: translateY(-10px);
-        opacity: 0;
+@media (max-width: 900px){
+    header{
+        padding: 0px;
     }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
+    .headerLeft{
+        display: none;
+    }
+    .headerLogo{
+        font-size: medium;
     }
 }

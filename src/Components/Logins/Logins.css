@@ -1,0 +1,70 @@
+.Logins{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.loginsBtnDiv{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: small;
+}
+.MobStyle{
+    display: flex;
+    gap: 1rem;
+}
+
+.MobStyle button{
+    background-color: red;
+    border: none;
+    padding: .5rem;
+    width: 6rem;
+    border-radius: 1rem;
+    font-size: medium;
+    color: white;
+}
+
+.loginsBtnDiv button:hover{
+    background-color: brown;
+}
+
+@media (max-width: 480px){
+    .MobStyle{
+        display: flex;
+        gap: .5rem;
+    }
+    .loginsBtnDiv{
+        flex-direction: column;
+    }
+    h2{
+        padding-bottom: .5rem;
+        font-size: medium;
+    }
+    .Logins{
+        flex-direction: column;
+    }
+    .loginsBtnDiv{
+        gap: .5rem;
+    }
+}
+
+@media (max-width: 900px){
+    .MobStyle{
+        display: flex;
+        gap: .5rem;
+    }
+    .loginsBtnDiv{
+        flex-direction: column;
+    }
+    h2{
+        padding-bottom: .5rem;
+        font-size: medium;
+    }
+    .Logins{
+        flex-direction: column;
+    }
+    .loginsBtnDiv{
+        gap: .5rem;
+    }
+}

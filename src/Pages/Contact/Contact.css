@@ -1,0 +1,11 @@
+.ContactDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:400px) {
+    .ContactDiv{
+        flex-direction: column;
+    }
+}

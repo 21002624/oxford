@@ -1,0 +1,28 @@
+.mapContainer {
+    width: 100%;
+    max-width: 500px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  body.dark-mode .mapContainer{
+    border: 1px solid #444;
+  }
+
+  body.dark-mode .mapContainer {
+    background-color: #333;
+  }
+
+  @media (max-width : 400px) {
+    .mapContainer{
+      width: 80%;
+      margin-top: 2rem;
+    }
+  }
+  @media (max-width: 900px) {
+    .mapContainer{
+      width: 80%;
+    }
+  }

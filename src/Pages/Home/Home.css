@@ -1,0 +1,24 @@
+.Home{
+    display: flex;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    flex-direction: column;
+}
+
+.CardDiv{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+@media (max-width: 480px){
+    .Home{
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .CardDiv{
+      padding: 0px;
+    }
+  }
