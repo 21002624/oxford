@@ -40,6 +40,10 @@ body.dark-mode header {
   white-space: nowrap;
 }
 
+.headerLogo div{
+    font-family: 'Fredoka One', sans-serif;
+}
+
 .logoDis {
   color: black;
   font-size: xx-small;
@@ -94,7 +98,6 @@ body.dark-mode header {
 .mobNavDiv ul li {
   padding: .5rem;
   text-align: center;
-  border-bottom: 1px solid #ddd;
 }
 
 @media (max-width: 480px) {
