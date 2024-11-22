@@ -1,86 +1,136 @@
 /* General Header Layout */
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: .6rem;
-    position: sticky;
-    top: 0; 
-    background-color: white; 
-    z-index: 1000; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    padding-left: 5rem;
-    padding-right: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 body.dark-mode header {
-    background-color:hsl(0, 0%, 10%);
+  background-color: hsl(0, 0%, 10%);
 }
 
 .headerLeft {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .headerLogo {
-    font-family: 'Fredoka One', sans-serif;
-    font-weight: bold;
-    font-size: xx-large;
-    color: #FFB800;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    word-wrap: break-word;
-    padding: 10px;
-    max-width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
+  font-family: 'Fredoka One', sans-serif;
+  font-weight: bold;
+  font-size: xx-large;
+  color: #FFB800;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  word-wrap: break-word;
+  padding: 10px;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-.logoDis{
-    color: black;
-    font-size: xx-small;
+.logoDis {
+  color: black;
+  font-size: xx-small;
 }
-
 
 .MenuIcon {
-    display: block; /* Always display the menu icon */
+  display: block; /* Always display the menu icon */
 }
 
 .headerSearch {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .headerIcons {
+  display: flex;
+  align-items: center;
+}
+
+.mobMenuIcon,
+.mobNavDiv {
+  display: none;
+}
+
+.mobNavDiv {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 5;
+}
+
+.mobNavDiv.visible {
+  display: block;
+}
+
+.mobNavDiv ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.mobNavDiv.visible ul {
+  max-height: 500px; 
+}
+
+.mobNavDiv ul li {
+  padding: .5rem;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 0px;
+  }
+  .headerLeft {
+    display: none;
+  }
+  .headerLogo {
+    font-size: medium;
+  }
+  .mobMenuIcon {
+    display: block;
+  }
+  .headerLogo {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .mobNavDiv {
+    display: block;
+    width: 100%;
+  }
 }
 
-@media (max-width: 480px){
-    header{
-        padding: 0px;
-    }
-    .headerLeft{
-        display: none;
-    }
-    .headerLogo{
-        font-size: medium;
-    }
-}
-
-@media (max-width: 900px){
-    header{
-        padding: 0px;
-    }
-    .headerLeft{
-        display: none;
-    }
-    .headerLogo{
-        font-size: medium;
-    }
+@media (max-width: 900px) {
+  header {
+    padding: 0px;
+  }
+  .headerLeft {
+    display: none;
+  }
+  .headerLogo {
+    font-size: medium;
+  }
 }
