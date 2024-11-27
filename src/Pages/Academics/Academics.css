@@ -1,0 +1,68 @@
+.academics-container {
+    width: 80%;
+    padding-top: 1rem;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+
+  h1{
+    color: #FFB800;
+  }
+  
+  .header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .dropdown-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .dropdown-container label {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  select {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+  }
+  
+  .table-container {
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  body.dark-mode table th {
+    background-color: hsl(0, 0%, 10%);
+    font-weight: bold;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  body.dark-mode table tr:nth-child(even) {
+    background-color: hsl(0, 0%, 10%);
+  }

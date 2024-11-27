@@ -4,7 +4,14 @@
     justify-content: center;
 }
 
+
 @media (max-width:400px) {
+    .ContactDiv{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:700px) {
     .ContactDiv{
         flex-direction: column;
     }

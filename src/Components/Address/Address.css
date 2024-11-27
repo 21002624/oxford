@@ -20,6 +20,7 @@
   .addressContainer p {
     margin: 0.25rem 0;
     color: #555;
+    text-align: left;
   }
   
   .addressContainer a {

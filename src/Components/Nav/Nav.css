@@ -3,17 +3,12 @@
   display: flex; 
   justify-content: space-around; 
   align-items: center; 
-  gap: 1rem;
+  gap: .7rem;
 }
 
 .navItem {
-  font-size: xx-small;
-  color: #ffffff;
-  background-color: #7d7d7d; 
-  font-size: 1.2rem;
+  font-size: medium;
   padding: .4rem; 
-  border-radius: 1rem;
-  width: 70px;
   display: flex;
   align-items: center;
   justify-content: center;

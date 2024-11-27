@@ -12,8 +12,13 @@ const Nav = () => {
         <li className="navItem">
           <Link to="/about">About</Link> 
         </li>
-        <li className="navItem">Addmis</li>
-        <li className="navItem">Query</li>
+        <li className="navItem">Admission</li>
+        <li className="navItem">
+          <Link to="/academics">Academics</Link> 
+        </li>
+        <li className="navItem">
+          <Link to="/faclities">Faclities</Link> 
+        </li>
         <li className="navItem">
           <Link to="/contact">Contact</Link>
         </li>

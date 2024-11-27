@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './MobNav.css'; 
-import CustomizedSwitches from '../DarkMode/DarkMode';
 
 
 
@@ -16,12 +15,22 @@ const MobNav = () => {
           <Link to="/about">About</Link> 
         </li>
         <li className="mobNavItem">
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact">Admission</Link>
         </li>
-        <li>
-        <div className="darkmodemobile">
-          <CustomizedSwitches customStyle={{ width: '30px', height: '30px'}} />
-        </div>
+        <li className="mobNavItem">
+          <Link to="/academics">Academics</Link>
+        </li>
+      </ul>
+
+      <ul className="mobNav">
+        <li className="mobNavItem">
+          <Link to="/faclities">Faclities</Link> 
+        </li>
+        <li className="mobNavItem">
+          <Link to="/about">About</Link> 
+        </li>
+        <li className="mobNavItem">
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
     </div>
