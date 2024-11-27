@@ -1,0 +1,25 @@
+.campus-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  .campus-label {
+    margin-right: 10px;
+  }
+  
+  .campus-select {
+    padding: 5px;
+    width: 200px;
+  }
+
+@media (max-width : 400px) {
+    .campus-select {
+        padding: 5px;
+        width: 100px;
+      }
+    .campus-label h2{
+        font-size: small;
+    }
+}
