@@ -1,11 +1,11 @@
 
 .noticeContainer {
-    width: 100%;
     overflow: hidden; 
     background-color: #f39c12;
     padding: 10px 0;
     position: relative;
-    border: 1px solid #e67e22; 
+    border: 1px solid #e67e22;
+    margin-top: 1rem;
   }
   
   .noticeText {
@@ -16,6 +16,7 @@
     font-weight: bold;
     animation: scrollText 10s linear infinite; 
   }
+
   
   @keyframes scrollText {
     0% {
@@ -25,4 +26,5 @@
       transform: translateX(-100%); 
     }
   }
+
   
