@@ -4,7 +4,6 @@ import robot from '../../../public/assets/robot.png';
 import running from '../../../public/assets/running.png';
 import sports from '../../../public/assets/sports.png';
 import tech from '../../../public/assets/tech.png';
-import Notice from '../../Components/Notice/Notice'
 import './Feature.css';
 
 const features = [
@@ -26,15 +25,17 @@ const Feature = () => {
             {features.map((feature, index) => (
                 <div className="feature-item" key={index}>
 
-                    <img src={feature.icon} alt={feature.text} className="feature-icon" />
-                    <p className="feature-text">{feature.text}</p>
-                    <div>
+                    <div className='featureDiv'>
+                      <img src={feature.icon} alt={feature.text} className="feature-icon" />
+                      
+                    </div>
+                    <div className='featureTectDiv'>
+                      <p className="feature-text">{feature.text}</p>
                         <p>dewhbjh</p>
                     </div>
                 </div>
             ))}
             </div>
-            <Notice />
     </div>
   );
 };

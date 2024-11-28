@@ -1,0 +1,156 @@
+/* Container Styling */
+.year-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    position: relative;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+  }
+
+  .yearBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .text-content {
+    max-width: 50%;
+    z-index: 2;
+  }
+  
+  .animated-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #444;
+    animation: slide-in-left 1s ease-out;
+  }
+  
+  .animated-paragraph {
+    font-size: 20px;
+    color: #666;
+    margin-top: 20px;
+    animation: fade-in 2s ease-in-out;
+  }
+  
+  .animated-button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: bounce 1s infinite;
+  }
+  
+  .number-content {
+    position: relative;
+    text-align: right;
+    width: 50%;
+  }
+  
+  /* 25 Background */
+  .large-number {
+    font-size: 500px;
+    font-weight: bold;
+    color: rgba(200, 200, 200, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    animation: zoom-in 1.5s ease-out;
+  }
+  
+
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .year-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .text-content {
+      max-width: 90%;
+      text-align: center;
+      order: 2; /* Move below the number on mobile */
+    }
+  
+    .number-content {
+      width: 100%;
+      text-align: center;
+      order: 1; /* Move above the text on mobile */
+    }
+  
+    .large-number {
+      font-size: 300px;
+      top: 20%;
+      transform: translate(-50%, 0); /* Adjust position for better fit */
+    }
+  
+
+  }
+
+  @media (max-width: 768px){
+    .happening-section{
+        padding: 0;
+    }
+    .year-container{
+        padding: 0;
+    }
+    .animated-title{
+        font-size: xx-large;
+        margin-top: 2rem;
+    }
+  }
+  
+  /* Animations */
+  
+  @keyframes slide-in-left {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes zoom-in {
+    from {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+
+  
