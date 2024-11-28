@@ -11,6 +11,7 @@ import TeacherLogin from './Pages/Login/Teacherlogin';
 import CustomizedSwitches  from '../src/Components/DarkMode/DarkMode';
 import Academics from './Pages/Academics/Academics';
 import Facilities from './Pages/Facilities/Facilities';
+import Admission from './Pages/Admission/Admission';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/parentlogin" element={<ParentLogin />} />
         <Route path="/teacherlogin" element={<TeacherLogin />} />
         <Route path="/contact" element={<Contact />} /> 
+        <Route path="/admission" element={<Admission />} /> 
         <Route path="/academics" element={<Academics />} />
         <Route path="/faclities" element={<Facilities/>} /> 
       </Routes>

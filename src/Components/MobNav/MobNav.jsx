@@ -18,7 +18,7 @@ const MobNav = () => {
           <Link to="/contact">Admission</Link>
         </li>
         <li className="mobNavItem">
-          <Link to="/academics">Academics</Link>
+          <Link to="/academics">Academics</Link> 
         </li>
       </ul>
 

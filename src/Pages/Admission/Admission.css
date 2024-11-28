@@ -1,0 +1,101 @@
+.admission-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+  }
+
+  body.dark-mode .admission-container{
+    background-color: rgb(38, 38, 38);
+  }
+  
+  .admission-title {
+    font-size: 32px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .admission-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+
+  body.dark-mode .form-group label {
+    color: white;
+  }
+
+  /* body.dark-mode .form-group input{
+    background-color: #333;
+  } */
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  .submit-button {
+    padding: 12px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+    width: 200px;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .instructions {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .instructions h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .instructions ol {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  
+  .instructions li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .instructions p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+  }
+  
