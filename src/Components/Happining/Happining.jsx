@@ -13,7 +13,6 @@ const Happening = () => {
       </div>
       <div className="happening-content">
         <div className="happening-description">
-          <p className="happening-title">Our Recent Events</p>
           <p className="happening-text">
             Explore the latest activities and events that define our vibrant campus life.
           </p>

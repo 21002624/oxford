@@ -27,6 +27,9 @@
   .aboutText h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
+  }
+
+  body.dark-mode .aboutText h2{
     color: #f39c12;
   }
   

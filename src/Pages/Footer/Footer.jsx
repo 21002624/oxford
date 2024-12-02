@@ -1,10 +1,12 @@
 import React from 'react';
 import './Footer.css';
 import { FaFacebook, FaYoutube , FaLinkedin, FaUserCircle } from 'react-icons/fa';
+import Branches from '../../Components/Branches/Branches';
 
 const Footer = () => {
   return (
     <footer className="footerContainer">
+      <Branches />
       <div className="footerContent">
         <div className='footerSchool'>
             

@@ -61,6 +61,10 @@ body.dark-mode .footerContainer {
   transition: color 0.3s;
 }
 
+.footerContent p{
+  text-align: left;
+}
+
 .socialIcon:hover {
   color: #f39c12;
 }

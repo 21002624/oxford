@@ -1,5 +1,6 @@
 import React from "react";
 import "./Year.css";
+import { Link } from 'react-router-dom';
 
 const Year = () => {
   return (
@@ -13,7 +14,9 @@ const Year = () => {
           
         </p>
         <div className="yearBtn">
-            <button className="animated-button">Learn More</button>
+            <button className="animated-button">
+              <Link to="/about">About Us</Link> 
+            </button>
         </div>
       </div>
       <div className="number-content">

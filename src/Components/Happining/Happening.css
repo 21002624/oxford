@@ -99,3 +99,10 @@
     background-color: #ffda7d;
   }
   
+  @media (max-width: 500px) {
+    .happening-section{
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    
+  }

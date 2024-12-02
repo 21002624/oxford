@@ -98,14 +98,14 @@ const Admission = () => {
 
       <div className="instructions">
         <h2>How to Fill the Admission Form</h2>
-        <ol>
-          <li>Enter your full name as it appears on official documents.</li>
-          <li>Provide a valid email address to receive further communication.</li>
-          <li>Include a phone number where you can be reached easily.</li>
-          <li>Select the grade level you are applying for from the dropdown menu.</li>
-          <li>Use the additional information section to mention any special requests or requirements.</li>
-          <li>Click on "Submit Application" to complete the process.</li>
-        </ol>
+        <div>
+          <p>1. Enter your full name as it appears on official documents.</p>
+          <p>2. Provide a valid email address to receive further communication.</p>
+          <p>3. Include a phone number where you can be reached easily.</p>
+          <p>4. Select the grade level you are applying for from the dropdown menu.</p>
+          <p>5. Use the additional information section to mention any special requests or requirements.</p>
+          <p>6. Click on "Submit Application" to complete the process.</p>
+        </div>
         <p>Once submitted, our team will review your application and contact you with further instructions. Thank you for choosing our institution!</p>
       </div>
     </div>

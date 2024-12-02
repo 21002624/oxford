@@ -19,7 +19,7 @@ const Feature = () => {
   return (
     <div>
         <div>
-            <h1>Features</h1>
+            <h1 className="alumni-title">Features</h1>
         </div>
         <div className="feature-container">
             {features.map((feature, index) => (

@@ -13,10 +13,7 @@
     background-color: hsl(0, 0%, 10%);
     color: white;
   }
-
-
   
-
   .mobNavItem a {
     text-decoration: none; 
     color: rgb(0, 0, 0);
@@ -24,6 +21,7 @@
     font-weight: 500;
     transition: color 0.3s ease; 
     font-weight: 300;
+    font-size: medium;
   }
   
   .mobNavItem a:hover {

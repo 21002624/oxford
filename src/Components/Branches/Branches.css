@@ -1,0 +1,28 @@
+.Branches{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 3rem;
+}
+.BranchDiv p{
+  align-items: flex-start;
+  text-align: left;
+}
+.BranchContainer{
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  padding-top: 1rem;
+}
+
+@media (max-width: 500px) {
+  .BranchContainer{
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .Branches{
+    align-items: flex-start;
+    padding-left: 1rem;
+  }
+  
+}
