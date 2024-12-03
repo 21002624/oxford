@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import { Link } from 'react-router-dom';
 import { FaFacebook, FaYoutube , FaLinkedin, FaUserCircle } from 'react-icons/fa';
 import Branches from '../../Components/Branches/Branches';
 
@@ -25,12 +26,10 @@ const Footer = () => {
             
             <div className="footerLinks">
             <h2>Links</h2>
-              <a href="#privacy" className="footerLink">Privacy Policy</a>
-              <a href="#terms" className="footerLink">Terms of Service</a>
-              <a href="#contact" className="footerLink">Contact Us</a>
+              <p className='footLink'><Link to="/admission">Admission</Link></p>
+              <p className='footLink'><Link to="/about">About</Link></p>
+              <p className='footLink'><Link to="/contact">Contact</Link></p>
             </div>
-
-            
             
         </div>
         
@@ -39,14 +38,6 @@ const Footer = () => {
           <h2>Developer</h2>
             <p>Page proudly developed by a proud school alumnus</p>
               <h2>Akash</h2>
-              <div className="socialLinks">
-                  <a href="https://im-akash.netlify.app/" target="_blank" rel="noopener noreferrer" className="socialIcon">
-                    <FaUserCircle />
-                  </a>
-                  <a href="https://www.linkedin.com/in/im-akasharul/" target="_blank" rel="noopener noreferrer" className="socialIcon">
-                    <FaLinkedin />
-                  </a>
-                </div>
           </div>
         </div>
       </div>

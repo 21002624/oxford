@@ -24,6 +24,7 @@ body.dark-mode .footerContainer {
   justify-content: space-between;
   padding-right: 5rem;
   padding-left: 5rem;
+  padding-bottom: 2rem;
 }
 
 .footerSchoolDiv{
@@ -41,7 +42,7 @@ body.dark-mode .footerContainer {
 .footerLinks {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: .5rem;
   text-align: left;
 }
 
@@ -67,6 +68,26 @@ body.dark-mode .footerContainer {
 
 .socialIcon:hover {
   color: #f39c12;
+}
+
+.footLink {
+  display: inline-block;
+  position: relative;   
+}
+
+.footLink::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;            
+  width: 0;
+  background-color: #f39c12; 
+  transition: width 0.3s ease-in-out; 
+}
+
+.footLink:hover::after {
+  width: 100%; 
 }
 
 @media (max-width: 768px) {
