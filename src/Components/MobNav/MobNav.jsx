@@ -17,9 +17,6 @@ const MobNav = () => {
         <li className="mobNavItem">
           <NavLink to="/admission">Admission</NavLink>
         </li>
-        <li className="mobNavItem">
-          <NavLink to="/academics">Academics</NavLink> 
-        </li>
       </ul>
 
       <ul className="mobNav">
@@ -27,11 +24,12 @@ const MobNav = () => {
           <NavLink to="/faclities">Faclities</NavLink> 
         </li>
         <li className="mobNavItem">
-          <NavLink to="/about">About</NavLink> 
+          <NavLink to="/academics">Academics</NavLink> 
         </li>
         <li className="mobNavItem">
           <NavLink to="/contact">Contact</NavLink>
         </li>
+
       </ul>
     </div>
   )

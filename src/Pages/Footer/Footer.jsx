@@ -10,10 +10,22 @@ const Footer = () => {
       <Branches />
       <div className="footerContent">
         <div className='footerSchool'>
+
+        <div className="footerLinks">
+            <div className="footQuickLinktitle">
+              <h2>Quick Links</h2>
+            </div>
+            
+              <div className='footQuickLinks'>
+              <p className='footLink'><Link to="/admission">Admission</Link></p>
+              <p className='footLink'><Link to="/about">About</Link></p>
+              <p className='footLink'><Link to="/contact">Contact</Link></p>
+              <p className='footLink'><Link to="/faclities">Facilities</Link></p>
+              </div>
+            </div>
             
             <div className='footerSchoolDiv'>
-              <h2>Oxford</h2>
-              <p>isn’t just a school, it’s where futures are made</p>
+              <h2>Social Links</h2>
               <div className="socialLinks">
                   <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="socialIcon">
                     <FaFacebook />
@@ -24,20 +36,14 @@ const Footer = () => {
                 </div>
               </div>
             
-            <div className="footerLinks">
-            <h2>Links</h2>
-              <p className='footLink'><Link to="/admission">Admission</Link></p>
-              <p className='footLink'><Link to="/about">About</Link></p>
-              <p className='footLink'><Link to="/contact">Contact</Link></p>
-            </div>
+            
             
         </div>
         
         <div>
           <div className='footerSchoolDiv'>
           <h2>Developer</h2>
-            <p>Page proudly developed by a proud school alumnus</p>
-              <h2>Akash</h2>
+              <p className='developername'><a href="https://im-akash.netlify.app/" target="_blank" rel="noopener noreferrer">Akash</a></p>
           </div>
         </div>
       </div>

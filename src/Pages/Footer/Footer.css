@@ -12,31 +12,51 @@
 .socialLinks{
   display: flex;
   gap: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 body.dark-mode .footerContainer {
   background-color: #000000;
   color: white;
 }
 
+.footQuickLinks{
+  display: flex;
+  gap: 2rem;
+}
+
 .footerContent {
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: space-between;
-  padding-right: 5rem;
-  padding-left: 5rem;
   padding-bottom: 2rem;
 }
 
+.footQuickLinktitle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .footerSchoolDiv{
-  text-align: left;
   display: flex;
   flex-direction: column;
   gap: .5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.developername{
+  text-align: center;
 }
 
 .footerSchool{
   display: flex;
+  flex-direction: column;
   gap: 2rem;
+  width: 100%;
+  align-items: center;
 }
 
 .footerLinks {
@@ -60,10 +80,6 @@ body.dark-mode .footerContainer {
   color: inherit; /* Inherit text color */
   font-size: 1.5rem;
   transition: color 0.3s;
-}
-
-.footerContent p{
-  text-align: left;
 }
 
 .socialIcon:hover {
@@ -110,5 +126,16 @@ body.dark-mode .footerContainer {
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 2rem;
+  }
+  .footQuickLinks{
+    flex-direction: column;
+    gap: .5rem;
+    align-items: flex-start;
+  }
+  .developername{
+    text-align: left;
+  }
+  .socialLinks{
+    text-align: left;
   }
 }

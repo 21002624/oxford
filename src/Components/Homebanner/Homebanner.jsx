@@ -1,6 +1,7 @@
 import React from 'react';
 import img from '../../../public/assets/b.png';
 import './Homebanner.css'; 
+import { Link } from 'react-router-dom';
 
 const Homebanner = ({data}) => {
   const { title = "Welcome to Oxford", description = "Oxford provides a world-class education and facilities." } = data || {};
@@ -13,7 +14,7 @@ const Homebanner = ({data}) => {
           {description}
         </p>
         <div className="yearBtn">
-            <button className="animated-button">Apply Now for Admission</button>
+            <button className="animated-button" ><Link to="/admission">Apply Now for Admission</Link></button>
         </div>
       </div>
       <div className="image-container">
