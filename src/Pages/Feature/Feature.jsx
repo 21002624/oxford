@@ -7,11 +7,11 @@ import tech from '../../../public/assets/tech.png';
 import './Feature.css';
 
 const features = [
-  { icon: heart, text: 'Heart Health' },
-  { icon: robot, text: 'Robotics Innovation' },
-  { icon: running, text: 'Fitness Goals' },
+  { icon: heart, text: 'Experience Teachers' },
+  { icon: robot, text: 'Robotics' },
+  { icon: running, text: 'Physical Activity' },
   { icon: sports, text: 'Sports Enthusiasm' },
-  { icon: tech, text: 'Tech Advancements' },
+  { icon: tech, text: 'Smart Board Classes' },
   { icon: robot, text: 'AI Revolution' },
 ];
 
@@ -31,7 +31,7 @@ const Feature = () => {
                     </div>
                     <div className='featureTectDiv'>
                       <p className="feature-text">{feature.text}</p>
-                        <p>dewhbjh</p>
+                        <p>We have best experienced teachers with well-versed in all the subjects.</p>
                     </div>
                 </div>
             ))}

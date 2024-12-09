@@ -100,6 +100,26 @@ body.dark-mode header {
   text-align: center;
 }
 
+.modernSelectDiv{
+  display: flex;
+  flex-direction: column;
+}
+
+.modernSelect{
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: white;
+}
+.modernSelect:focus{
+  border: none;
+}
+
+div .modernSelect:focus {
+  border: none;
+}
+
+
 @media (max-width: 480px) {
   header {
     padding: 0px;

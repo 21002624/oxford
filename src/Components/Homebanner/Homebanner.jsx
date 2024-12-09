@@ -2,13 +2,15 @@ import React from 'react';
 import img from '../../../public/assets/b.png';
 import './Homebanner.css'; 
 
-const Homebanner = () => {
+const Homebanner = ({data}) => {
+  const { title = "Welcome to Oxford", description = "Oxford provides a world-class education and facilities." } = data || {};
+
   return (
     <div className="home-banner">
       <div className="text-container">
-        <h1 className="heading">Welcome to Our School</h1>
+        <h1 className="heading">{title}</h1>
         <p className="paragraph">
-          Our school focuses on excellence in academics, sports, and arts, ensuring holistic development for every student. Join us for an enriching journey!
+          {description}
         </p>
         <div className="yearBtn">
             <button className="animated-button">Apply Now for Admission</button>

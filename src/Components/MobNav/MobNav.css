@@ -38,3 +38,6 @@
     color: orange;
   }
   
+  .mobNavItem .active {
+    color: #f39c12;
+  }

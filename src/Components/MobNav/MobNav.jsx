@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './MobNav.css'; 
 
 
@@ -9,28 +9,28 @@ const MobNav = () => {
     <div>
       <ul className="mobNav">
         <li className="mobNavItem">
-          <Link to="/">Home</Link>
+          <NavLink to="/">Home</NavLink>
         </li>
         <li className="mobNavItem">
-          <Link to="/about">About</Link> 
+          <NavLink to="/about">About</NavLink> 
         </li>
         <li className="mobNavItem">
-          <Link to="/admission">Admission</Link>
+          <NavLink to="/admission">Admission</NavLink>
         </li>
         <li className="mobNavItem">
-          <Link to="/academics">Academics</Link> 
+          <NavLink to="/academics">Academics</NavLink> 
         </li>
       </ul>
 
       <ul className="mobNav">
         <li className="mobNavItem">
-          <Link to="/faclities">Faclities</Link> 
+          <NavLink to="/faclities">Faclities</NavLink> 
         </li>
         <li className="mobNavItem">
-          <Link to="/about">About</Link> 
+          <NavLink to="/about">About</NavLink> 
         </li>
         <li className="mobNavItem">
-          <Link to="/contact">Contact</Link>
+          <NavLink to="/contact">Contact</NavLink>
         </li>
       </ul>
     </div>

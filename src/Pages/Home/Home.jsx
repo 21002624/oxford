@@ -1,16 +1,14 @@
 import React from 'react'
 import './Home.css';
 import Homebanner from '../../Components/Homebanner/Homebanner';
-import Campus from '../../Components/Campus/Campus';
 import Feature from '../Feature/Feature';
 import Year from '../../Components/Year/Year';
 import Alumni from '../../Components/Alumni/Alumni';
 
-const Home = () => {
+const Home = ({ selectedOption, data }) => {
   return (
     <div className='Home'>
-      <Campus />
-      <Homebanner />
+      <Homebanner selectedOption={selectedOption} data={data} />
       <Feature />
       <Year />
       <Alumni />

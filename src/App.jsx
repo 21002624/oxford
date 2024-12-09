@@ -12,14 +12,16 @@ import CustomizedSwitches  from '../src/Components/DarkMode/DarkMode';
 import Academics from './Pages/Academics/Academics';
 import Facilities from './Pages/Facilities/Facilities';
 import Admission from './Pages/Admission/Admission';
+import {data} from '../src/Components/Data/Data';
+
 function App() {
-  const [count, setCount] = useState(0)
+  const [selectedOption, setSelectedOption] = useState('Oxford-Matric');
 
   return (
     <Router> 
-      <Header />
+      <Header selectedOption={selectedOption} setSelectedOption={setSelectedOption} />
       <Routes>
-        <Route path="/" element={<Home />} /> 
+        <Route path="/" element={<Home selectedOption={selectedOption} data={data[selectedOption]} />} /> 
         <Route path="/about" element={<About />} />
         <Route path="/parentlogin" element={<ParentLogin />} />
         <Route path="/teacherlogin" element={<TeacherLogin />} />
