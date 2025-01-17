@@ -15,14 +15,16 @@ import Admission from './Pages/Admission/Admission';
 import {data} from '../src/Components/Data/Data';
 import Gallery from './Pages/Gallery/Gallery';
 import Enquire from './Components/Enquire/Enquire';
+import Logins from './Components/Logins/Logins';
 
 function App() {
   const [selectedOption, setSelectedOption] = useState('Matric');
 
   return (
     <Router> 
-      <Enquire />
+      
       <Header selectedOption={selectedOption} setSelectedOption={setSelectedOption} />
+      <Enquire />
       <Routes>
         <Route path="/" element={<Home selectedOption={selectedOption} data={data[selectedOption]} />} /> 
         <Route path="/about" element={<About selectedOption={selectedOption} data={data} />} />
