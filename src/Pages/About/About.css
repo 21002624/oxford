@@ -16,6 +16,7 @@
     width: 100%;
     border-radius: 10px;
     object-fit: cover;
+    height: 300px;
   }
   
   .aboutText {
@@ -41,6 +42,7 @@
 @media (max-width : 400px) {
   .aboutImg{
     width: 200px;
+    height: 100%;
   }
   .aboutImage{
     padding-bottom: 2rem;

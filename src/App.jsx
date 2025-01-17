@@ -11,18 +11,18 @@ import TeacherLogin from './Pages/Login/Teacherlogin';
 import CustomizedSwitches  from '../src/Components/DarkMode/DarkMode';
 import Academics from './Pages/Academics/Academics';
 import Facilities from './Pages/Facilities/Facilities';
-import Admission from './Pages/Admission/Admission';
+import Admission from './Pages/Admission/Admission'; 
 import {data} from '../src/Components/Data/Data';
 
 function App() {
-  const [selectedOption, setSelectedOption] = useState('Oxford-Matric');
+  const [selectedOption, setSelectedOption] = useState('Matric');
 
   return (
     <Router> 
       <Header selectedOption={selectedOption} setSelectedOption={setSelectedOption} />
       <Routes>
         <Route path="/" element={<Home selectedOption={selectedOption} data={data[selectedOption]} />} /> 
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={<About selectedOption={selectedOption} data={data} />} />
         <Route path="/parentlogin" element={<ParentLogin />} />
         <Route path="/teacherlogin" element={<TeacherLogin />} />
         <Route path="/contact" element={<Contact />} /> 

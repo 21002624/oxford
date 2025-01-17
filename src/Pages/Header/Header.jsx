@@ -29,7 +29,7 @@ const Header = ({ selectedOption, setSelectedOption }) => {
               onChange={handleSelectChange}
               className="modernSelect"
             >
-              <option value="matric">Oxford matric school</option>
+              <option value="Matric">Oxford matric school</option>
               <option value="Public">Chennai public school</option>
               <option value="Bloomingdale">Oxford's Bloomingdale</option>
             </select>

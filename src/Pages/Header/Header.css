@@ -114,7 +114,9 @@ body.dark-mode header {
 .modernSelect:focus{
   border: none;
 }
-
+.modernSelect:hover{
+  cursor: pointer;
+}
 div .modernSelect:focus {
   border: none;
 }

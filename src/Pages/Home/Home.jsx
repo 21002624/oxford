@@ -9,8 +9,8 @@ const Home = ({ selectedOption, data }) => {
   return (
     <div className='Home'>
       <Homebanner selectedOption={selectedOption} data={data} />
-      <Feature />
-      <Year />
+      <Feature selectedOption={selectedOption} data={data}/>
+      <Year selectedOption={selectedOption} data={data}/>
       <Alumni />
     </div>
   )
