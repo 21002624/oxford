@@ -13,12 +13,15 @@ import Academics from './Pages/Academics/Academics';
 import Facilities from './Pages/Facilities/Facilities';
 import Admission from './Pages/Admission/Admission'; 
 import {data} from '../src/Components/Data/Data';
+import Gallery from './Pages/Gallery/Gallery';
+import Enquire from './Components/Enquire/Enquire';
 
 function App() {
   const [selectedOption, setSelectedOption] = useState('Matric');
 
   return (
     <Router> 
+      <Enquire />
       <Header selectedOption={selectedOption} setSelectedOption={setSelectedOption} />
       <Routes>
         <Route path="/" element={<Home selectedOption={selectedOption} data={data[selectedOption]} />} /> 
@@ -28,7 +31,8 @@ function App() {
         <Route path="/contact" element={<Contact />} /> 
         <Route path="/admission" element={<Admission />} /> 
         <Route path="/academics" element={<Academics />} />
-        <Route path="/faclities" element={<Facilities/>} /> 
+        <Route path="/faclities" element={<Facilities/>} />
+        <Route path="/gallery" element={<Gallery />} /> 
       </Routes>
       <Footer />
     </Router>

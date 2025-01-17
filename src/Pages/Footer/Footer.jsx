@@ -11,20 +11,35 @@ const Footer = () => {
       <div className="footerContent">
         <div className='footerSchool'>
 
-        <div className="footerLinks">
-            <div className="footQuickLinktitle">
-              <h2>Quick Links</h2>
-            </div>
-            
-              <div className='footQuickLinks'>
-              <p className='footLink'><Link to="/admission">Admission</Link></p>
-              <p className='footLink'><Link to="/about">About</Link></p>
-              <p className='footLink'><Link to="/contact">Contact</Link></p>
-              <p className='footLink'><Link to="/faclities">Facilities</Link></p>
+          <div className="footerLinks">
+              <div className="footQuickLinktitle">
+                <h2>Our Policy</h2>
               </div>
-            </div>
-            
-            <div className='footerSchoolDiv'>
+              
+                <div className='footQuickLinks'>
+                  <p className='footLink'><Link to="/admission">Privacy Policy</Link></p>
+                  <p className='footLink'><Link to="/about">Terms & Conditions</Link></p>
+                  <p className='footLink'><Link to="/contact">Refunds/Cancellation</Link></p>
+                </div>
+            </div>      
+        </div>
+
+        <div className='footerSchool'>
+
+          <div className="footerLinks">
+              <div className="footQuickLinktitle">
+                <h2>Quick Links</h2>
+              </div>
+              
+                <div className='footQuickLinks'>
+                  <p className='footLink'><Link to="/admission">Admission</Link></p>
+                  <p className='footLink'><Link to="/about">About</Link></p>
+                  <p className='footLink'><Link to="/contact">Contact</Link></p>
+                </div>
+            </div>      
+        </div>
+
+              <div className='footerSchoolDiv'>
               <h2>Social Links</h2>
               <div className="socialLinks">
                   <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="socialIcon">
@@ -34,11 +49,7 @@ const Footer = () => {
                     <FaYoutube />
                   </a>
                 </div>
-              </div>
-            
-            
-            
-        </div>
+              </div> 
         
         <div>
           <div className='footerSchoolDiv'>
@@ -48,7 +59,9 @@ const Footer = () => {
         </div>
       </div>
 
-      <p>© 2024 Akash. All Rights Reserved.</p>
+      <div className="footerCopyRight">
+        <p>© 2024 Akash. All Rights Reserved.</p>
+      </div>
 
     </footer>
   );
