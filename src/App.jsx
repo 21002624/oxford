@@ -24,6 +24,7 @@ function App() {
     <Router> 
       
       <Header selectedOption={selectedOption} setSelectedOption={setSelectedOption} />
+
       <Enquire />
       <Routes>
         <Route path="/" element={<Home selectedOption={selectedOption} data={data[selectedOption]} />} /> 

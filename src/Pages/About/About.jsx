@@ -2,6 +2,8 @@ import React from 'react';
 import './About.css';
 import school from '../../../public/assets/school.jpg';
 import Happening from '../../Components/Happining/Happining';
+import Count from '../../Components/Count/Count';
+import Chairman from '../../Components/Chairman/Chairman';
 
 const About = ({ selectedOption, data }) => {
   const schoolData = data[selectedOption] || {};
@@ -17,6 +19,8 @@ const About = ({ selectedOption, data }) => {
           <p>{schoolData.about || "No additional information available for this school."}</p>
         </div>
       </div>
+      <Count />
+      <Chairman />
       <Happening />
     </>
   );

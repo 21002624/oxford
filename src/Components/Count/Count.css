@@ -1,0 +1,32 @@
+.count-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .count-item {
+    text-align: center;
+  }
+  
+  .count-item h2 {
+    font-size: 4rem;
+    color: #f18c2e;
+    margin: 0;
+  }
+  
+  .count-item p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0 0;
+  }
+  
+@media (max-width: 500px) {
+  .count-container{
+    flex-direction: column;
+  }
+  .count-item h2{
+    font-size: 3rem;
+  }
+}

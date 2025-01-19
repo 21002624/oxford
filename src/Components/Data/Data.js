@@ -9,7 +9,7 @@ export const data = {
   Matric: {
     title: "Welcome to Oxford Matric",
     description: "Oxford Matric provides a world-class education and facilities.",
-    about: "",
+    about: "Holistic education demands development of all aspects of individual’s personality including cognitive, affective and psycho motor domains. It is unfortunate that not much attention and emphasis is given to the development of interests, hobbies and passion of learners. Focusing on excellence in academics alone undoubtedly results in lop-sided development of personality. It is thus essential that due importance be given to participation in co-cumeular activities like music, dance, art, dramatics and other areas of one’s interest to make life more fulfilling and enjoyable.",
     features: [
       { title: "Experienced Teachers", img: heart, description: "We have the best experienced teachers well-versed in all subjects." },
       { title: "Robotics", img: robot, description: "Introducing students to the world of robotics with hands-on training and competitions." },

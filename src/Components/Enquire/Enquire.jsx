@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import whatsappIcon from '../../../public/assets/whatsapp-icon.png'; 
-import email from '../../../public/assets/email.png'; 
+import whatsappIcon from '../../../public/assets/whatsapp-icon.png';
+import email from '../../../public/assets/email.png';
 import youtube from '../../../public/assets/youtube.png';
-import enquire  from '../../../public/assets/enquire.png';
+import enquire from '../../../public/assets/enquire.png';
 
 const Enquire = () => {
   const [visible, setVisible] = useState(true);
   const [hoveredIcon, setHoveredIcon] = useState(null); // Store the hovered icon state
+  const [isMobile, setIsMobile] = useState(false);
   let inactivityTimer;
 
   useEffect(() => {
-    // Function to reset the inactivity timer and make the component visible
+    // Function to handle user activity
     const handleUserActivity = () => {
       clearTimeout(inactivityTimer);
       setVisible(true);
@@ -34,12 +35,27 @@ const Enquire = () => {
     };
   }, []);
 
+  useEffect(() => {
+    // Function to detect screen size
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+
+    // Check screen size on load and when resized
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup event listener on component unmount
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const icons = [
     { src: whatsappIcon, alt: 'WhatsApp Icon', top: '40%', bgColor: '#1fff5a', id: 'whatsapp' },
     { src: youtube, alt: 'YouTube Icon', top: '56%', bgColor: '#8c0000', id: 'youtube' },
     { src: email, alt: 'Email Icon', top: '48%', bgColor: '#ff1414', id: 'email' },
-    { src: enquire, alt: 'Email Icon', top: '64%', bgColor: '#f237ff', id: 'email' },
+    { src: enquire, alt: 'Enquire Icon', top: '64%', bgColor: '#f237ff', id: 'enquire' },
   ];
+
+  // Do not render the component on mobile view
+  if (isMobile) return null;
 
   return (
     <>
