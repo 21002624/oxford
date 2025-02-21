@@ -62,3 +62,9 @@
   body.dark-mode table tr:nth-child(even) {
     background-color: hsl(0, 0%, 10%);
   }
+
+  @media (max-width: 400px) {
+    .header-row{
+      flex-direction: column;
+    }
+  }
