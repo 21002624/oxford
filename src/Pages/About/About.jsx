@@ -4,6 +4,7 @@ import school from '../../../public/assets/school.jpg';
 import Happening from '../../Components/Happining/Happining';
 import Count from '../../Components/Count/Count';
 import Chairman from '../../Components/Chairman/Chairman';
+import Correspondent from '../../Components/Correspondent/Correspondent';
 
 const About = ({ selectedOption, data }) => {
   const schoolData = data[selectedOption] || {};
@@ -22,6 +23,7 @@ const About = ({ selectedOption, data }) => {
       <Count />
       <Chairman />
       <Happening />
+      <Correspondent />
     </>
   );
 };

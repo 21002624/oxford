@@ -7,7 +7,7 @@ const Chairman = () => {
     <div className='Chairman'>
 
     <div className="chairmanTitle">
-        <h1>Chaiman</h1>
+        <h1>Chaiman Says</h1>
     </div>
 
     <div className="chairman-container">

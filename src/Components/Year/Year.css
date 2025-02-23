@@ -56,9 +56,9 @@
   
   /* 25 Background */
   .large-number {
-    font-size: 500px;
+    font-size: 430px;
     font-weight: bold;
-    color: rgba(200, 200, 200, 0.2);
+    color: #ffe39d;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -85,13 +85,14 @@
     .number-content {
       width: 100%;
       text-align: center;
-      order: 1; /* Move above the text on mobile */
+      order: 1; 
     }
   
     .large-number {
-      font-size: 300px;
+      font-size: 200px;
       top: 20%;
-      transform: translate(-50%, 0); /* Adjust position for better fit */
+      transform: translate(-50%, 0); 
+      color: #ffe39d;
     }
   
 

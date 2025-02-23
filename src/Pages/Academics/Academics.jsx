@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import './Academics.css';
+import SchoolHighlights from '../../Components/SchoolHighlights/SchoolHighlights';
+import Homeslider from '../../Components/Homeslider/Homeslider';
+import SpecialFeatures from '../../Components/SpecialFeatures/SpecialFeatures';
 
 const Academics = () => {
   // Sample data for academic results
@@ -33,6 +36,9 @@ const Academics = () => {
   const [selectedYear, setSelectedYear] = useState(Object.keys(data)[0]);
 
   return (
+    <>
+    <Homeslider />
+    <SchoolHighlights />
     <div className="academics-container">
       <div className="header-row">
         <h1>Academic Results</h1>
@@ -72,6 +78,7 @@ const Academics = () => {
         </table>
       </div>
     </div>
+    </>
   );
 };
 

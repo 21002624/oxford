@@ -20,7 +20,7 @@ export const data = {
     ],
     anniversary: {
       title: "Celebrating 30 Glorious Years!",
-      year : 25,
+      year : 30,
       description: "30 years of excellence in nurturing young minds at Oxford Matric.",
     },
   },
